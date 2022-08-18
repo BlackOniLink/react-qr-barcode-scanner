@@ -11,7 +11,8 @@
   "scripts": {
     "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx --fix",
     "build": "rm -rf dist && tsc --build tsconfig.json",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -46,5 +47,6 @@
     "eslint": "^7.0.0",
     "eslint-plugin-react": "^7.20.0",
     "typescript": "^3.9.2"
-  }
+  },
+  "private": true
 }
